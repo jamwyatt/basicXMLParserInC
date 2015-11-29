@@ -1,0 +1,65 @@
+
+<?xml version="1.0" encoding="US-ASCII" standalone="yes" ssVersion="1"?>
+<SRPC_response id="123">
+	<exitCode value="1"/>
+      <result name=exitStatus value=FORMAT/>
+      <result name=errorText value=Missing Timeout String/>
+</SRPC_response>
+
+
+
+
+<?xml version="1.0" encoding="US-ASCII" standalone="yes" ssVersion="1"?>
+<SRPC_response id="123">
+	<exitCode value="1"/>
+      <result name=exitStatus value=NOK/>
+      <result name=errorText value=Command illegal/>
+</SRPC_response>
+
+
+
+<?xml version="1.0" encoding="US-ASCII" standalone="yes" ssVersion="1"?>
+<SRPC_response id="123">
+	<exitCode value="0"/>
+      <result name=exitStatus value=OK/>
+	<result name="interfaceCount" value="2"/>
+	<result name="statusIcon value=http://bpswtch1/allOkFlag.jpg/>
+      <tableResult name=ipStats>
+ 	    <heading>
+		<name tag="interface"/>
+		<name tag="inPkts">
+		<name tag="outPkts">
+		<name tag="errPkts">
+		<name tag="Status">
+	    </heading>
+	    <row>
+		<value data="ixp1">
+		<value data="76363">
+		<value data="748">
+		<value data="500">
+		<value url="http://bpswtch1/redLight.jpg">
+	    </row>
+	    <row>
+		<value info="ixp1">
+		<value info="726363">
+		<value info="73648">
+		<value info="0">
+		<value url="http://bpswtch1/greenLight.jpg">
+	    </row>
+      </tableResult>
+</SRPC_response>
+
+
+
+<?xml version="1.0" encoding="US-ASCII" standalone="yes" ssVersion="1"?>
+<auth name="admin" password="admin">
+<SRPC cmd="getIfStats" id="123" timeout="10">
+	<cmdLineParm name="interface" value="all"/>
+	<inputData>
+		System Fixed
+		Saved Config
+	</inputData>
+</SRPC>
+
+
+
